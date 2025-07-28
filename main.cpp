@@ -111,7 +111,7 @@ public:
 
     bool OnUserCreate() override {
 
-        auto cart = std::make_shared<Cartridge>("ex.nes");
+        auto cart = std::make_shared<Cartridge>("../roms/sm1.nes");
 
         NES.InsertCartridge(cart);
         NES.InsertController1(&controller1);
@@ -203,7 +203,10 @@ public:
         //DrawSprite(648,348,&NES.ppu.GetPattern(1,nSelectedPalette));
 
         DrawCode(516, 72, 20);
-
+        DrawString(516,0,"Controls: Arrows keys to move" ,olc::WHITE,1);
+        DrawString(516,20,"A and S are A(NES) and B(NES)", olc::WHITE, 1);
+        DrawString(516,40, "start and select are enter and shift", olc::WHITE, 1);
+        DrawString(516,60, "Press C to start", olc::WHITE, 2);
 
 
 

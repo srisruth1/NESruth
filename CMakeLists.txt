@@ -19,5 +19,7 @@ add_executable(NESruth main.cpp
         Controller.h
         Mapper2.cpp
         Mapper2.h)
+file(COPY ${CMAKE_SOURCE_DIR}/roms DESTINATION ${CMAKE_BINARY_DIR})
 target_link_libraries(NESruth opengl32 dwmapi gdiplus shlwapi)
+
 
