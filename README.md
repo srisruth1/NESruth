@@ -4,5 +4,5 @@ NESruth NES emulator
 - current issues: Lack of sound, improper Sprite 0 hit timing
 
 Future Updates:
-Sprite 0 hit, sound 
+Sprite 0 hit, sound,
 GUI
